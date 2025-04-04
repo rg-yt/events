@@ -1,2 +1,8 @@
 <h1>Events</h1>
 <p>Take a look at the events happening</p>
+<ul>
+  <% @events.each do |event| %>
+    <li><%= link_to event.location, event_path(event)  %></li>
+  <% end %>
+</ul>
+<%= button_to "Sign Out", destroy_user_session_path, method: :delete  %>
