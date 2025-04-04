@@ -1,2 +1,8 @@
 <h1>Events</h1>
 <p>Take a look at the events happening</p>
+<h2>Your created events</h2>
+<ul>
+  <% @events.each do |event| %>
+    <li><%= event.location %></li>
+  <% end %>
+</ul>
