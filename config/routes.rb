@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "event_attendances/new"
+  get "event_attendances/create"
   devise_for :users
   get "events/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
